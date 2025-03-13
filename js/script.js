@@ -75,34 +75,62 @@
     });
 
 
-    // Partner
-    $(document).ready(function () {
-        var owl = $("#owl-demo1");
-      
-        owl.owlCarousel({
-          items: 4, //10 items above 1000px browser width
-          itemsDesktop: [1000, 3], //5 items between 1000px and 901px
-          itemsDesktopSmall: [900, 2], // 3 items betweem 900px and 601px
-          itemsTablet: [600, 1], //2 items between 600 and 0;
-          itemsMobile: [360, 1] // itemsMobile disabled - inherit from itemsTablet option
-        });
-      
-        // Custom Navigation Events
-        $(".next").click(function () {
-          owl.trigger("owl.next");
-        });
-        $(".prev").click(function () {
-          owl.trigger("owl.prev");
-        });
-        $(".play").click(function () {
-          owl.trigger("owl.play", 1000);
-        });
-        $(".stop").click(function () {
-          owl.trigger("owl.stop");
-        });
-      });
-      
 
+
+   // Button More
+  // Actions for the "Show more" button (onClick)
+  $(".show-trigger").click(function () {
+  // Fade out the button (you can change this animation)
+  $(this).fadeOut(function () {
+    // When fade out is done, fade in the extra content
+    $(this).siblings(".dynamic-content").fadeIn();
+  });
+});
+
+  // Actions for the "Show less" button (onClick)
+  $(".hide-trigger").click(function () {
+  // Fade out the extra content
+  $(this)
+    .parents(".dynamic-content")
+    .fadeOut(function () {
+      // When fade out is done, fade in the "Show more" button
+      $(this).siblings(".show-trigger").fadeIn();
+    });
+});
+
+   
+    // Testimonials
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        center: false,
+        dots: false,
+        loop: true,
+        margin: 25,
+        nav : true,
+        navText : [
+            '<i class="fa fa-arrow-right"></i>',
+            '<i class="fa fa-arrow-left"></i>'
+        ],
+        responsiveClass: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:2
+            },
+            1200:{
+                items:2
+            }
+        }
+    });
 
    // Back to top button
    $(window).scroll(function () {
