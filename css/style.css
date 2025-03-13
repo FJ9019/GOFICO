@@ -49,7 +49,7 @@
 }
 
 .btn.btn-primary:hover {
-    color: var(--primary);
+    color: var(--bs-red);
     background: transparent;
 }
 
@@ -107,7 +107,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--bs-red);
 }
 
 @media (max-width: 991.98px) {
@@ -187,7 +187,7 @@
 # Features Section
 --------------------------------------------------------------*/
 .features .features-item {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--bs-primary), transparent 20%);
 }
 
 .features .features-item+.features-item {
@@ -206,14 +206,14 @@
 }
 
 .features .features-item .btn-get-started {
-  background-color: var(--accent-color);
+  background-color: var(--bs-red);
   color: var(--contrast-color);
   padding: 8px 30px 10px 30px;
   border-radius: 4px;
 }
 
 .features .features-item .btn-get-started:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+  background-color: color-mix(in srgb, var(--bs-red), transparent 10%);
 }
 
 .features .features-item ul {
@@ -234,7 +234,7 @@
 .features .features-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--accent-color);
+  color: var(--bs-red);
 }
 
 .features .features-item img {
@@ -490,6 +490,74 @@
 }
 /*** Témoignage End ***/
 
+/*** Recrutement Start ***/
+.contact .info-item {
+  background: color-mix(in srgb, var(--bs-primary), transparent 96%);
+  padding: 30px;
+}
+
+.contact .info-item i {
+  font-size: 38px;
+  line-height: 0;
+  color: var(--bs-red);
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  background: color-mix(in srgb, var(--bs-primary), transparent 96%);
+  padding: 30px;
+  height: 100%;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--bs-primary);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--bs-primary), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--bs-red);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--bs-primary), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  background: var(--bs-dark);
+  color: var(--contrast-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--bs-gray), transparent 20%);
+}
+/*** Recrutement End ***/
 
 /*** Footer ***/
 
@@ -540,5 +608,5 @@
 }
 
 .footer .copyright a:hover {
-    color: var(--primary);
+    color: var(--bs-red);
 }
