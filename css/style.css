@@ -607,6 +607,18 @@
 .contact .form-wrapper button:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+@media (max-width: 768px) {
+    .form-group {
+      margin-top: 10px;
+    }
+  }
+
+@media (max-width: 640px) {
+    .form-group {
+      margin-top: 10px;
+  }
+}  
 /*** Contact End ***/
 
 /*** Footer ***/
