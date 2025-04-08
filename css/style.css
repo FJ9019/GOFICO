@@ -548,6 +548,12 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 640px) {
+  .partenaires-logo {
+    padding: 18px;
+  }
+}
+
 /*** Partenaire End ***/
 
 /*** Témoignage Start ***/
