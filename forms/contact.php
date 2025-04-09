@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Validate email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format";
+        echo "Format d'email non valide";
         exit;
     }
     
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
     // Compose the email body
-    $email_body = "You have received a new message from the contact form on your website.\n\n";
+    $email_body = "Vous avez reçu un nouveau message provenant du formulaire de contact de votre site web.\n\n";
     $email_body .= "Name: $name\n";
     $email_body .= "Email: $email\n";
     $email_body .= "Subject: $subject\n";
