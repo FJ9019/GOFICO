@@ -48,6 +48,10 @@ body {
     z-index: 99999;
 }
 
+.bg-dark {
+  background-color: #566573 !important;
+}
+
 #spinner.show {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
@@ -149,7 +153,7 @@ body {
     .navbar .navbar-nav {
         margin-top: 10px;
         border-top: 1px solid rgba(0, 0, 0, .07);
-        background: var(--dark);
+        background: #566573;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -243,6 +247,14 @@ body {
   font-weight: bolder;
 }
 
+.features {
+  margin-bottom: 50px;
+}
+
+.image-stack {
+  margin-top: 50px;
+}
+
 .features-item {
   text-align: justify;
 }
@@ -334,6 +346,10 @@ body {
 
   .features-item {
     margin-bottom: -50px;
+  }
+
+  .image-stack {
+    margin-top: 10px;
   }
 
   .flex-column {
@@ -716,6 +732,10 @@ body {
   margin-left: 15%;
 }
 
+.team {
+  margin-bottom: 40px;
+}
+
 .team .section-team h2 {
   color: var(--accent-color);
   margin-top: 90px;
@@ -836,53 +856,122 @@ body {
 }
 
 /*** Footer ***/
-
-.footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: rgba(255,255,255,0.5);
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
+.footer {
+  color: var(--contrast-color);
+  background-color: #566573;
+  font-size: 14px;
+  padding-bottom: 50px;
+  position: relative;
 }
 
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: rgba(255,255,255,0.5);
-    margin-right: 10px;
+.footer .footer-top {
+  padding-top: 50px;
 }
 
-.footer .btn.btn-link:hover {
-    color: var(--light);
-    letter-spacing: 1px;
-    box-shadow: none;
+.footer .footer-about .logo {
+  margin-bottom: 25px;
 }
 
-.footer .btn.btn-square {
-    color: rgba(255,255,255,0.5);
-    border: 1px solid rgba(255,255,255,0.5);
+.footer .footer-about .logo img {
+  max-height: 50px;
+  margin-right: 10px;
 }
 
-.footer .btn.btn-square:hover {
-    color: var(--secondary);
-    border-color: var(--light);
+.footer .footer-about .logo span {
+  color: var(--heading-color);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: var(--heading-font);
+}
+
+.footer .footer-about p {
+  font-size: 14px;
+  font-family: var(--heading-font);
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 50%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  padding-right: 2px;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
 }
 
 .footer .copyright {
-    padding: 25px 0;
-    font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 95%);
 }
 
-.footer .copyright a {
-    color: var(--secondary);
+.footer .copyright p {
+  margin-bottom: 0;
 }
 
-.footer .copyright a:hover {
-    color: var(--bs-red);
+.footer .credits {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.credits a {
+  color: #212529;
+  font-weight: 600;
 }
