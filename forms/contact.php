@@ -3,7 +3,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect and sanitize input data
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
-    $subject = htmlspecialchars($_POST['subject']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $services = htmlspecialchars($_POST['services']);
+    $institution = htmlspecialchars($_POST['institution']);
+    $object = htmlspecialchars($_POST['object']);
     $message = htmlspecialchars($_POST['message']);
     
     // Validate email
@@ -13,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Set the recipient email address
-    $to = "tech@gofico.net";
+    $to = "margarette.altidor@gofico.net";
     
     // Set email headers
     $headers = "From: $email\r\n";
@@ -24,7 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body = "Vous avez reçu un nouveau message provenant du formulaire de contact de votre site web.\n\n";
     $email_body .= "Name: $name\n";
     $email_body .= "Email: $email\n";
-    $email_body .= "Subject: $subject\n";
+    $email_body .= "Phone: $phone\n";
+    $email_body .= "Services: $services\n";
+    $email_body .= "Institution: $institution\n";
+    $email_body .= "Object: $object\n";
     $email_body .= "Message:\n$message\n";
     
     // Send the email
