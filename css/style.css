@@ -396,6 +396,9 @@ body {
     border-radius: 10px;
 }
 
+.service-content a {
+}
+
 .service .service-item .service-img {
     position: relative;
     overflow: hidden;
@@ -513,6 +516,7 @@ body {
 .service .service-item:hover .service-content::after {
     height: 100%;
 }
+
 *******************************************************
 /*** Page Services Start ***/
 .service-item {
