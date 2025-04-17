@@ -517,6 +517,128 @@ body {
 
 /*** Legislation End ***/
 
+/*** Politique Pub Start ***/
+.politique {
+  padding-bottom: 20px;
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.politique .container {
+  margin-top: 100px;
+}
+
+.politique .content .who-we-are {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.politique .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.politique .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.politique .content ul li {
+  padding-bottom: 10px;
+}
+
+.politique .content ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
+
+.politique .content p:last-child {
+  margin-bottom: 0;
+}
+
+.politique .content .read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.politique .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.politique .content .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  padding-right: 19px;
+}
+
+.politique .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+.politique .politique-images img {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .politique {
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .politique .container {
+    margin-top: 50px;
+  }
+}
+
+/*** Politique Pub End ***/
+
+/*** Guides Start ***/
+.guides-details .guides-item+.guides-item {
+  margin-top: 60px;
+}
+
+.guides-details h1 {
+  margin-top: 50px;
+}
+
+.guides-details {
+  margin-bottom: 60px;
+}
+
+.guides-details .guides-item .content {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.guides-details .guides-item h3 {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.guides-details .guides-item img {
+  border-radius: 15px;
+}
+
+/*** Guides End ***/
+
 /*** Partenaire Start ***/
 .partenaires-logo {
   padding: 2.5rem 0;
