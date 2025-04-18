@@ -640,15 +640,17 @@ body {
 /*** Guides End ***/
 
 /*** Photo Start ***/
-
-.container {
+.main .display-6 {
+  margin-top: 80px;
+}
+.container-1 {
   max-width: 80rem;
   width: 100%;
   padding: 4rem 2rem;
   margin: 0 auto;
 }
 
-.main .container {
+.main .container-1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
@@ -679,13 +681,13 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .main .container {
+  .main .container-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
 
-  .main .container {
+  .main .container-1 {
     margin-top: -40px;
   }
 }
