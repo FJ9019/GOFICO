@@ -77,26 +77,66 @@
 
 
 
-   // Button More
-  // Actions for the "Show more" button (onClick)
-  $(".show-trigger").click(function () {
-  // Fade out the button (you can change this animation)
-  $(this).fadeOut(function () {
-    // When fade out is done, fade in the extra content
-    $(this).siblings(".dynamic-content").fadeIn();
-  });
+   // Swiper Logo
+   document.addEventListener('DOMContentLoaded', function() {
+    // Clone the logos for infinite loop effect
+    const carousel = document.querySelector('.logo-carousel');
+    const slides = document.querySelectorAll('.logo-slide');
+    
+    // Double the slides for seamless looping
+    slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        carousel.appendChild(clone);
+    });
+    
+    // Pause/play on hover (already handled in CSS but adding JS fallback)
+    carousel.addEventListener('mouseenter', function() {
+        this.style.animationPlayState = 'paused';
+    });
+    
+    carousel.addEventListener('mouseleave', function() {
+        this.style.animationPlayState = 'running';
+    });
+    
+    // Reset position when animation completes (for older browsers)
+    carousel.addEventListener('animationiteration', function() {
+        // This helps with older browsers that might have issues with infinite animation
+        if (window.getComputedStyle(carousel).animationName === 'scroll') {
+            // No need to do anything as CSS handles it, but this is a fallback
+        }
+    });
+    
+    // Touch support for mobile devices
+    let touchStartX = 0;
+    let isDragging = false;
+    
+    carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        isDragging = true;
+        carousel.style.animationPlayState = 'paused';
+    }, {passive: true});
+    
+    carousel.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const touchX = e.touches[0].clientX;
+        const diff = touchX - touchStartX;
+        carousel.style.transform = `translateX(calc(${getCurrentTranslateX()}px + ${diff}px))`;
+    }, {passive: true});
+    
+    carousel.addEventListener('touchend', () => {
+        if (!isDragging) return;
+        isDragging = false;
+        carousel.style.animationPlayState = 'running';
+        carousel.style.transform = '';
+    }, {passive: true});
+    
+    function getCurrentTranslateX() {
+        const style = window.getComputedStyle(carousel);
+        const matrix = new DOMMatrix(style.transform);
+        return matrix.m41;
+    }
 });
 
-  // Actions for the "Show less" button (onClick)
-  $(".hide-trigger").click(function () {
-  // Fade out the extra content
-  $(this)
-    .parents(".dynamic-content")
-    .fadeOut(function () {
-      // When fade out is done, fade in the "Show more" button
-      $(this).siblings(".show-trigger").fadeIn();
-    });
-});
 
    
     // Testimonials
