@@ -135,7 +135,20 @@
 
     // Photo Gallery
 
-    
+    // Fancybox Configuration
+$('[data-fancybox="gallery"]').fancybox({
+    buttons: [
+      "slideShow",
+      "thumbs",
+      "zoom",
+      "fullScreen",
+      "share",
+      "close"
+    ],
+    loop: false,
+    protect: true
+  });
+  
 
    // Back to top button
    $(window).scroll(function () {
