@@ -603,6 +603,10 @@ body {
   .politique .container {
     margin-top: 50px;
   }
+
+  .col-lg-12 {
+    display: none;
+  }
 }
 
 /*** Politique Pub End ***/
@@ -1089,6 +1093,7 @@ body {
 
 .footer .footer-top {
   padding-top: 50px;
+  width: 90%;
 }
 
 .footer .footer-about .logo {
