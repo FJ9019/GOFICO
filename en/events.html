@@ -20,6 +20,8 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -52,12 +54,12 @@
                     -->
                 </div>
                 <div class="col-lg-6 px-5 text-end">
+                    <!--
                     <button class="flag-button">
-                        <a href="/en/index.html">
-                           <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" class="flag-icon" width="20" height="15">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" class="flag-icon" width="20" height="15">
                         Anglais
-                        </a>
                     </button>
+                    -->
                     <small>Follow us:</small>
                     <a class="text-white-50 ms-3"><i class="fab fa-facebook-f"></i></a>
                     <a class="text-white-50 ms-3"><i class="fab fa-twitter"></i></a>
@@ -76,13 +78,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                        <a href="index.html" class="nav-item nav-link">Accueil</a>
                         <a href="apropos.html" class="nav-item nav-link">À propos</a>
                         <a href="services.html" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Autres</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Autres</a>
                             <div class="dropdown-menu m-0">
-                                <a href="evenements.html" class="dropdown-item">Événements</a>
+                                <a href="evenements.html" class="dropdown-item active">Événements</a>
                                 <a href="temoignage.html" class="dropdown-item">Témoignages</a>
                             </div>
                         </div>
@@ -105,7 +107,7 @@
                             </div>
                         </a>
                     </div>
-                    -->
+                -->
                 </div>
             </nav>
         </div>
@@ -166,7 +168,7 @@
                 </button>
             </div>
         </div>
-    <!-- Carousel End -->
+        <!-- Carousel End -->
 
     <!-- Partenaire Section -->
     <h2 style="text-align:center;text-transform:uppercase;">Nos Partenaires</h2>
@@ -197,29 +199,97 @@
     </div>
     <!-- /Partenaire Section --> 
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
+    <!-- Événements  Section -->
+    <section id="features" class="features section" style="margin-top: 40px;">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/img-05.jpg" alt="" style="object-fit: cover;">
-                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/img-04.webp" alt="" style="width: 200px; height: 200px;">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Page Accueil</div>
-                        <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
-                            <p class="text-dark mb-2"><strong>GOFICO</strong> est une firme de consultation haïtienne évoluant dans la catégorie des professions libérales. Elle offre ses services aux secteurs privé,
-                                étatique et non gouvernemental. Elle est enregistrée au No : 12 Reg. 56 du registre commercial du Ministère du Commerce et de l’Industrie. </p>
-                        </div>
-                    </div>
-                </div>
+          <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+            <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+              <img src="img/img-07.jpg" class="img-fluid" alt="">
             </div>
+            <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+              <h3 style="margin-bottom: 18px;">Événements </h3>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Calendrier des événements et des conférences organisés par la firme ou auxquels elle participe.</span></li>
+                <li><i class="bi bi-check"></i><span> Informations sur les formations et les ateliers proposés par la firme.</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
+    <!-- /Événements  Section -->
+
+    <!-- Photo Start -->
+    <main class="main">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 650px;">
+        <h1 class="display-6 mb-5">Quelques images des formations effectuées dans le pays.</h1>
+      </div>
+        <div class="container-1">
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/BSG-Groupe de travail Lascahobas-Juillet 2024.jpg" data-fancybox="gallery" data-caption="BSG-Groupe de travail Lascahobas-Juillet 2024">
+                <img src="img/photo/BSG-Groupe de travail Lascahobas-Juillet 2024.jpg" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/BSG-Photo Formation Lascahobas Juillet 2024.jpg" data-fancybox="gallery" data-caption="BSG-Photo Formation Lascahobas Juillet 2024">
+                <img src="img/photo/BSG-Photo Formation Lascahobas Juillet 2024.jpg" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/Formation Comptables Payeurs 2010 (en salle).JPG" data-fancybox="gallery" data-caption="Formation Comptables Payeurs 2010 (en salle)">
+                <img src="img/photo/Formation Comptables Payeurs 2010 (en salle).JPG" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/Formation Comptables Payeurs 2010.JPG" data-fancybox="gallery" data-caption="Formation Comptables Payeurs 2010">
+                <img src="img/photo/Formation Comptables Payeurs 2010.JPG" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/Formation entrepreuneuriat Dec 2024-2.jpg" data-fancybox="gallery" data-caption="Formation entrepreuneuriat Dec 2024-2">
+                <img src="img/photo/Formation entrepreuneuriat Dec 2024-2.jpg" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/Formation entrepreuneuriat Dec 2024-3.jpg" data-fancybox="gallery" data-caption="Formation entrepreuneuriat Dec 2024-3">
+                <img src="img/photo/Formation entrepreuneuriat Dec 2024-3.jpg" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/Formation entrepreuneuriat Dec 2024-4.jpg" data-fancybox="gallery" data-caption="Formation entrepreuneuriat Dec 2024-4">
+                <img src="img/photo/Formation entrepreuneuriat Dec 2024-4.jpg" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/Formation entrepreuneuriat Dec 2024.jpg" data-fancybox="gallery" data-caption="Formation entrepreuneuriat Dec 2024">
+                <img src="img/photo/Formation entrepreuneuriat Dec 2024.jpg" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a href="img/photo/Sensibilisation des membres du comite de suivi de Cerca-La-Source sur la BSG.jpg" data-fancybox="gallery" data-caption="Sensibilisation des membres du comite de suivi de Cerca-La-Source sur la BSG">
+                <img src="img/photo/Sensibilisation des membres du comite de suivi de Cerca-La-Source sur la BSG.jpg" alt="Image Gallery">
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>     
+    <!-- Photo End -->
 
     <!-- Footer Start -->
     <footer id="footer" class="footer position-relative light-background">
@@ -285,7 +355,6 @@
     </footer>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
@@ -298,6 +367,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+        
 
     <!-- Template Javascript -->
     <script src="js/script.js"></script>

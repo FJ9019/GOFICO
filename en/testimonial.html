@@ -52,12 +52,12 @@
                     -->
                 </div>
                 <div class="col-lg-6 px-5 text-end">
+                    <!--
                     <button class="flag-button">
-                        <a href="/en/index.html">
-                           <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" class="flag-icon" width="20" height="15">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" class="flag-icon" width="20" height="15">
                         Anglais
-                        </a>
                     </button>
+                    -->
                     <small>Follow us:</small>
                     <a class="text-white-50 ms-3"><i class="fab fa-facebook-f"></i></a>
                     <a class="text-white-50 ms-3"><i class="fab fa-twitter"></i></a>
@@ -76,16 +76,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                        <a href="index.html" class="nav-item nav-link">Accueil</a>
                         <a href="apropos.html" class="nav-item nav-link">À propos</a>
                         <a href="services.html" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Autres</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Autres</a>
                             <div class="dropdown-menu m-0">
                                 <a href="evenements.html" class="dropdown-item">Événements</a>
-                                <a href="temoignage.html" class="dropdown-item">Témoignages</a>
+                                <a href="temoignage.html" class="dropdown-item active">Témoignages</a>
                             </div>
-                        </div>
+                        </div>                        
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Ressources</a>
                             <div class="dropdown-menu m-0">
@@ -105,7 +105,7 @@
                             </div>
                         </a>
                     </div>
-                    -->
+                -->
                 </div>
             </nav>
         </div>
@@ -166,7 +166,7 @@
                 </button>
             </div>
         </div>
-    <!-- Carousel End -->
+        <!-- Carousel End -->
 
     <!-- Partenaire Section -->
     <h2 style="text-align:center;text-transform:uppercase;">Nos Partenaires</h2>
@@ -197,29 +197,94 @@
     </div>
     <!-- /Partenaire Section --> 
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/img-05.jpg" alt="" style="object-fit: cover;">
-                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/img-04.webp" alt="" style="width: 200px; height: 200px;">
-                    </div>
+        <!-- Témoignage  Section -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Témoignages</h4>
+                    <h1 class="display-4 mb-4">Ce que disent nos clients</h1>
+                    <!--
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p>
+                -->
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Page Accueil</div>
-                        <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
-                            <p class="text-dark mb-2"><strong>GOFICO</strong> est une firme de consultation haïtienne évoluant dans la catégorie des professions libérales. Elle offre ses services aux secteurs privé,
-                                étatique et non gouvernemental. Elle est enregistrée au No : 12 Reg. 56 du registre commercial du Ministère du Commerce et de l’Industrie. </p>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonials-1.png" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Nom du client</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonials-1.png" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Nom du client</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonials-1.png" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Nom du client</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+        <!-- /Témoignage  Section -->
 
     <!-- Footer Start -->
     <footer id="footer" class="footer position-relative light-background">
@@ -285,7 +350,6 @@
     </footer>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
@@ -298,6 +362,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
+        
 
     <!-- Template Javascript -->
     <script src="js/script.js"></script>

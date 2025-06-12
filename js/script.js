@@ -173,7 +173,18 @@
     });
 
 
-    // Photo Gallery
+    // Disable PDF Downloading
+// Block right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// Block Ctrl+S, Ctrl+P (Save & Print shortcuts)
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && (e.key === 's' || e.key === 'p')) {
+    e.preventDefault();
+    alert("Downloading is disabled.");
+  }
+});
+
 
     // Fancybox Configuration
 $('[data-fancybox="gallery"]').fancybox({
