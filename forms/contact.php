@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Validate email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Format d'email non valide";
+        echo "Invalid email format";
         exit;
     }
     
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
     // Compose the email body
-    $email_body = "Vous avez reçu un nouveau message provenant du formulaire de contact de votre site web.\n\n";
+    $email_body = "You have received a new message from the contact form on your website..\n\n";
     $email_body .= "Name: $name\n";
     $email_body .= "Email: $email\n";
     $email_body .= "Phone: $phone\n";
@@ -36,16 +36,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send the email
     if (mail($to, $subject, $email_body, $headers)) {
         // Redirect to the contact page with a success message
-        header("Location: ../contactez-nous.html?status=success");
+        header("Location: ../contact-us.html?status=success");
         exit;
     } else {
         // Redirect to the contact page with an error message
-        header("Location: ../contactez-nous.html?status=error");
+        header("Location: ../contact-us.html?status=error");
         exit;
     }
 } else {
     // Redirect to the contact page if the request method is not POST
-    header("Location: ../contactez-nous.html");
+    header("Location: ../contact-us.html");
     exit;
 }
 ?>
