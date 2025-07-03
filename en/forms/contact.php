@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Message:\n$message\n";
     
     // Send the email
-    if (mail($to, $subject, $email_body, $headers)) {
+    if (mail($to, $object, $email_body, $headers)) {
         // Redirect to the contact page with a success message
         header("Location: ../contact-us.html?status=success");
         exit;

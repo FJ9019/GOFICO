@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Set the recipient email address
-    $to = "margarette.altidor@gofico.net";
+    $to = "tech@gofico.net";
     
     // Set email headers
     $headers = "From: $email\r\n";
@@ -25,16 +25,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Compose the email body
     $email_body = "Vous avez reçu un nouveau message du formulaire de contact de votre site web.\n\n";
-    $email_body .= "Name: $name\n";
-    $email_body .= "Email: $email\n";
-    $email_body .= "Phone: $phone\n";
+    $email_body .= "Nom & Prenom: $name\n";
+    $email_body .= "Courriel: $email\n";
+    $email_body .= "Téléphone: $phone\n";
     $email_body .= "Services: $services\n";
     $email_body .= "Institution: $institution\n";
-    $email_body .= "Object: $object\n";
+    $email_body .= "Objet: $object\n";
     $email_body .= "Message:\n$message\n";
     
     // Send the email
-    if (mail($to, $subject, $email_body, $headers)) {
+    if (mail($to, $object, $email_body, $headers)) {
         // Redirect to the contact page with a success message
         header("Location: ../contactez-nous.html?status=success");
         exit;

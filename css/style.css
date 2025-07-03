@@ -604,9 +604,10 @@ body {
     margin-top: 50px;
   }
 
-  .col-lg-12 {
+  .politique .col-lg-12 {
     display: none;
   }
+
 }
 
 /*** Politique Pub End ***/
@@ -941,6 +942,10 @@ body {
     .form-group {
       margin-top: 10px;
     }
+
+    .contact .form-wrapper textarea.form-control {
+      
+   }
   }
 
 @media (max-width: 640px) {
