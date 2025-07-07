@@ -761,7 +761,7 @@ body {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-150px * 8)); /* Move by half the total width */
+      transform: translateX(calc(-150px *8)); /* Move by half the total width */
   }
 }
 
