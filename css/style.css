@@ -175,6 +175,7 @@ body {
         z-index: 0;
         border: 2px solid red;
         border-radius: 8px;
+        margin-top: 12px;
         
     }
 }
