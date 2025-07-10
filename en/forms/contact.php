@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Set the recipient email address
-    $to = "tech@gofico.net";
+    $to = "margarette.altidor@gofico.net";
     
     // Set email headers
     $headers = "From: $email\r\n";
