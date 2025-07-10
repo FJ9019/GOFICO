@@ -31,6 +31,10 @@ body {
   margin-right: 8px;
 }
 
+.button-lang {
+  display: none;
+}
+
 .flag-button {
   padding: 2px 8px;
   background-color: #dddddd;
@@ -160,6 +164,18 @@ body {
 
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
+    }
+
+    .navbar .button-lang {
+        display: inline-block;
+        color: red;
+        background: #ffffff;
+        padding: 4px 8px;
+        outline: none;
+        z-index: 0;
+        border: 2px solid red;
+        border-radius: 8px;
+        
     }
 }
 
